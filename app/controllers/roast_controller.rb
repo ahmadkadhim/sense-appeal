@@ -1,4 +1,4 @@
-class RoastController < ApplicationController
+class RoastsController < ApplicationController
 
 	def index
 		@roasts = Roast.all
@@ -11,7 +11,5 @@ class RoastController < ApplicationController
 	def update
 
 	end
-
-	def 
 
 end

@@ -6,6 +6,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-roasts = Roast.create(
-	[{ }]
-)
+roasts = Roast.create([
+	{ 	title: 'Gn',
+		origin: 'Minas Gerais',
+		location: 'GoogleMapsDataPlaceholder',
+		description: 'Bla bla bla yummy coffee'
+	},
+	{ 	title: 'M',
+		origin: 'Ethiopia',
+		location: 'GoogleMapsDataPlaceholder',
+		description: 'Bla bla bla super yummy coffee'
+	}
+])

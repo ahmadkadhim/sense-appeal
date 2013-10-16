@@ -2,7 +2,7 @@ SenseAppeal::Application.routes.draw do
   
   root "pages#home"
   
-  resources :roasts
+  resources :roast
 
 
   # The priority is based upon order of creation: first created -> highest priority.
