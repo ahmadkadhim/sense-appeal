@@ -1,6 +1,6 @@
 SenseAppeal::Application.routes.draw do
   
-  root "welcome#index"
+  root "pages#home"
   
   resources :roasts
 
