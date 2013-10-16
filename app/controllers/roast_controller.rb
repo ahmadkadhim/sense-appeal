@@ -1,7 +1,7 @@
 class RoastController < ApplicationController
 
 	def index
-		@books = Book.all
+		@roasts = Roast.all
 	end
 
 	def create
@@ -11,7 +11,7 @@ class RoastController < ApplicationController
 	def update
 
 	end
-		
+
 	def 
 
 end
