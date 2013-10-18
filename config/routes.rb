@@ -1,6 +1,9 @@
 SenseAppeal::Application.routes.draw do
   
   root "pages#home"
+
+  get 'contact' => 'pages#contact'
+  get 'about' => 'pages#about'
   
   resources :roasts, :path => :coffees, :as => :coffees
 

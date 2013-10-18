@@ -15,8 +15,6 @@
 	</div>
 <% end %>
 
-<p><%= coffee_path(@roast) %></p>
-
 <%= form_for(@roast, url: coffee_path(params[:id]), html: {class: "coffee_form"}) do |f| %>
 
 	<div class="field">

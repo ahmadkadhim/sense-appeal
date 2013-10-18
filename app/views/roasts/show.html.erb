@@ -4,5 +4,7 @@
 <p><%= @roast.description %></p>
 
 <%= link_to "Edit", edit_coffee_path(@roast) %>
+<br>
 <%= link_to "Delete", coffee_path(@roast), :confirm => "Sure you want to delete this coffee?", :method => :delete %>
+<br>
 <%= link_to "Coffees", coffees_path %>
