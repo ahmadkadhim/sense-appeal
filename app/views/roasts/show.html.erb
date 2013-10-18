@@ -1,0 +1,8 @@
+<h3><%= @roast.name %></h3>
+<h4><%= @roast.origin %></h4>
+
+<p><%= @roast.description %></p>
+
+<%= link_to "Edit", edit_coffee_path(@roast) %>
+<%= link_to "Delete", coffee_path(@roast), :confirm => "Sure you want to delete this coffee?", :method => :delete %>
+<%= link_to "Coffees", coffees_path %>

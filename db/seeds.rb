@@ -7,12 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 roasts = Roast.create([
-	{ 	title: 'Gn',
+	{ 	name: 'Gn',
 		origin: 'Minas Gerais',
 		location: 'GoogleMapsDataPlaceholder',
 		description: 'Bla bla bla yummy coffee'
 	},
-	{ 	title: 'M',
+	{ 	name: 'M',
 		origin: 'Ethiopia',
 		location: 'GoogleMapsDataPlaceholder',
 		description: 'Bla bla bla super yummy coffee'

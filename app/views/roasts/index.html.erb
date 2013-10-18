@@ -1,1 +1,15 @@
 <h2>Coffees</h2>
+
+
+<ul>
+	<% @roasts.each do |roast| %>
+		<li>
+			<h3><%= link_to roast.name, coffee_path(roast) %></h3>
+			<h4><%= roast.origin %></h4>
+			<p><%= roast.description %></p>
+			<%= link_to "Edit", edit_coffee_path(roast) %>
+		</li>
+	<% end %>
+</ul>
+
+<%= link_to "Add A New Roast", new_coffee_path %>

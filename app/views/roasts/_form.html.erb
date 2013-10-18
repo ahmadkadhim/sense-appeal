@@ -1,0 +1,23 @@
+<%= form_for coffee_path(@roast) do |f| %>
+
+	<div class="field">
+		<%= f.label :name %><br>
+		<%= f.text_field "roastName" %>
+	</div>
+	<div class="field">
+		<%= f.label :origin %><br>
+		<%= f.text_field "origin" %>
+	</div>
+	<div class="field">
+		<%= f.label :location %><br>
+		<%= f.text_field "location" %>
+	</div>
+	<div class="field">
+		<%= f.label :description %><br>
+		<%= f.text_field "description" %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Add It!" %>
+	</div>
+
+<% end %>

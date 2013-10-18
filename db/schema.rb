@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016182341) do
+ActiveRecord::Schema.define(version: 20131017174811) do
 
   create_table "roasts", force: true do |t|
-    t.string   "title"
     t.string   "origin"
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
+    t.string   "name"
   end
 
 end
