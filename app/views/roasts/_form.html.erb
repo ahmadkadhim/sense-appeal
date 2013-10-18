@@ -1,20 +1,20 @@
-<%= form_for coffee_path(@roast) do |f| %>
+<%= form_for @roast, url: coffee_path(@roast), html: {class: "coffee_form"} do |f| %>
 
 	<div class="field">
 		<%= f.label :name %><br>
-		<%= f.text_field "roastName" %>
+		<%= f.text_field :name %>
 	</div>
 	<div class="field">
 		<%= f.label :origin %><br>
-		<%= f.text_field "origin" %>
+		<%= f.text_field :origin %>
 	</div>
 	<div class="field">
 		<%= f.label :location %><br>
-		<%= f.text_field "location" %>
+		<%= f.text_field :location %>
 	</div>
 	<div class="field">
 		<%= f.label :description %><br>
-		<%= f.text_field "description" %>
+		<%= f.text_field :description %>
 	</div>
 	<div class="actions">
 		<%= f.submit "Add It!" %>

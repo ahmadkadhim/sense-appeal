@@ -28,7 +28,7 @@ class RoastsController < ApplicationController
 	def update
 		@roast = Roast.find(params[:id])
 
-		if @picture.update_attributes(roast_params)
+		if @roast.update_attributes(roast_params)
 			redirect_to coffee_url
 		else
 			render :edit
