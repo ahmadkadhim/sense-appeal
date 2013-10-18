@@ -29,7 +29,7 @@ class RoastsController < ApplicationController
 		@roast = Roast.find(params[:id])
 
 		if @roast.update_attributes(roast_params)
-			redirect_to coffee_url
+			redirect_to coffee_path(params[:id])
 		else
 			render :edit
 		end
