@@ -2,11 +2,15 @@ SenseAppeal::Application.routes.draw do
   
   root "pages#home"
 
-  get 'contact' => 'pages#contact'
   get 'about' => 'pages#about'
   
   resources :roasts, :path => :coffees, :as => :coffees
 
+  resources :menus do
+    resources :sections, controller => :menus do
+      resources :items
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,21 @@
+<h1><%= link_to "Sense Appeal", root_path %>
+
+
+<h2><%= @menu.title %></h2>
+
+
+<ul>
+	<% @sections.each do |section| %>
+		<li class="section">
+			<h3><%= section.title %></h3>
+			<%= link_to "Edit", edit_menu_section_path(section) %>
+			<ul>
+				<% @items.each do |item| %>
+					<li class="item">
+						<h5><%= item.title %></h5>
+					</li>
+				<% end %>
+			</ul>
+		</li>
+	<% end %>
+</ul>
