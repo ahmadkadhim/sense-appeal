@@ -15,9 +15,9 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: #000;
+$body-font-color: #ddd;
+$body-font-family: "Gotham-Black", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -28,7 +28,7 @@
 // $text-direction: ltr;
 
 // We use these as default colors throughout
-// $primary-color: #2ba6cb;
+$primary-color: #F3A065;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -88,9 +88,9 @@
 $header-font-family: "Gotham-Black", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #000;
 // $header-line-height: 1.4;
-// $header-top-margin: .2em;
+// $header-top-margin: 0em;
 // $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
@@ -191,7 +191,7 @@ $header-font-family: "Gotham-Black", "Helvetica Neue", "Helvetica", Helvetica, A
 // $label-pointer: pointer;
 // $label-font-size: emCalc(14px);
 // $label-font-weight: 500;
-// $label-font-color: lighten(#000, 30%);
+$label-font-color: #ddd;
 // $label-bottom-margin: emCalc(3px);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
@@ -766,15 +766,15 @@ $header-font-family: "Gotham-Black", "Helvetica Neue", "Helvetica", Helvetica, A
 //
 
 // We use these to control the style of the reveal overlay.
-// $reveal-overlay-bg: rgba(#000, .45);
-// $reveal-overlay-bg-old: #000;
+// $reveal-overlay-bg: rgba(#444, .45);
+// $reveal-overlay-bg-old: #444;
 
 // We use these to control the style of the modal itself.
 // $reveal-modal-bg: #fff;
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: emCalc(20px);
-// $reveal-box-shadow: 0 0 10px rgba(#000,.4);
+// $reveal-box-shadow: 0 0 10px rgba(#444,.4);
 
 // We use these to style the reveal close button
 // $reveal-close-font-size: emCalc(22px);
@@ -933,7 +933,7 @@ $header-font-family: "Gotham-Black", "Helvetica Neue", "Helvetica", Helvetica, A
 // $thumb-border-style: solid;
 // $thumb-border-width: 4px;
 // $thumb-border-color: #fff;
-// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
+// $thumb-box-shadow: 0 0 0 1px rgba(#444,.2);
 // $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
 
 // Radius and transition speed for thumbs

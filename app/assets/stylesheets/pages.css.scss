@@ -2,15 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@font-face {
-	font-family: Gotham-Black;
-	src: url('/fonts/Gotham-Black.otf')
+
+// Home Page Content
+
+header {
+	background-color: #fff;
+	padding: 1em;
 }
 
-p, a {
-	margin: 5px 7px;
+
+
+section#statement {
+	background-color: #fff;
+	padding: 1em;
 }
 
-a {
-	display: inline-block;
+section#basic-info {
+	height:200px;
+	background-color: #000;
+	padding: 1em;
 }
