@@ -2,12 +2,10 @@
 
 one:
   title: MyString
-  section_id: 
   description: MyString
   price: 9.99
 
 two:
   title: MyString
-  section_id: 
   description: MyString
   price: 9.99

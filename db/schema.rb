@@ -15,18 +15,18 @@ ActiveRecord::Schema.define(version: 20131018214433) do
 
   create_table "items", force: true do |t|
     t.string   "title"
-    t.integer  "section_id"
+    t.string   "section"
+    t.integer  "menu_id"
     t.string   "description"
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "items", ["section_id"], name: "index_items_on_section_id"
+  add_index "items", ["menu_id"], name: "index_items_on_menu_id"
 
   create_table "menus", force: true do |t|
     t.string   "title"
-    t.integer  "section_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,15 +39,5 @@ ActiveRecord::Schema.define(version: 20131018214433) do
     t.text     "description"
     t.string   "name"
   end
-
-  create_table "sections", force: true do |t|
-    t.string   "title"
-    t.integer  "menu_id"
-    t.integer  "item_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "sections", ["menu_id"], name: "index_sections_on_menu_id"
 
 end

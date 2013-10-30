@@ -1,5 +1,5 @@
 SenseAppeal::Application.routes.draw do
-  
+
   root "pages#home"
 
   get 'about' => 'pages#about'
@@ -7,9 +7,7 @@ SenseAppeal::Application.routes.draw do
   resources :roasts, :path => :coffees, :as => :coffees
 
   resources :menus do
-    resources :sections, controller => :menus do
-      resources :items
-    end
+    resources :items
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

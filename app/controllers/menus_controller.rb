@@ -5,10 +5,7 @@ class MenusController < ApplicationController
 
   def show
     @menu = Menu.find(params[:id])
-    @sections = @menu.sections
-    @sections.each do |section|
-      @items = Item.all
-    end
+    #@items = @menu.items
   end
 
   def new
@@ -29,7 +26,13 @@ class MenusController < ApplicationController
   private
 
   def menu_params
-    return params.require(:menu).permit(:title, :section_id)
+    return params.require(:menu).permit(:title)
+    # return :item_id?
   end
 
+  def item_params
+    @items = Item.all
+    @items.each do |item|    
+  end
+  
 end
