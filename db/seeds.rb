@@ -73,38 +73,47 @@ menus = Menu.create([
 items = Item.create([
 	{
 		title: 'Yoghurt and Granola',
+ 		menu_id: 1,
 		section: '1'
 	},
 	{
 		title: 'Avocado and Tomato',
+ 		menu_id: 1,
 		section: '2'
 	},
 	{
 		title: 'Swiss Chard & Almond Cream Soup',
+ 		menu_id: 2,
 		section: '3'
 	},
 	{
 		title: 'Chicken and Chevre Salad',
+ 		menu_id: 2,
 		section: '4'
 	},
 	{
 		title: 'Montecristo',
+ 		menu_id: 2,
 		section: '5'
 	},
 	{
 		title: "Heston's Fries",
+ 		menu_id: 2,
 		section: '6'
 	},
 	{
 		title: 'Espresso',
+ 		menu_id: 3,
 		section: '7'
 	},
 	{
 		title: 'Turkish Latte',
+ 		menu_id: 3,
 		section: '8'
 	},
 	{
 		title: 'Rooibos',
+ 		menu_id: 3,
 		section: '9'
 	}
 ])

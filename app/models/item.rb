@@ -1,8 +1,9 @@
 class Item < ActiveRecord::Base
   belongs_to :menu
 
-  scope :breakfast { }
-end
+#   scope :breakfast { }
+# end
+
 module Item
 	module ClassMethods
 		
@@ -16,4 +17,7 @@ module Item
 		receiver.extend         ClassMethods
 		receiver.send :include, InstanceMethods
 	end
+end
+
+
 end

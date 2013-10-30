@@ -4,13 +4,11 @@
 <h2><%= @menu.title %></h2>
 
 
-<!-- <ul>
-	<% #@items.each do |items| %>
+<ul>
+	<% @items.each do |item| %>
 		<li class="item">
 			<h3><%= item.title %></h3>
-			<%= #link_to "Edit", edit_menu_item_path(item, @menu) %>
-			<ul>
-			</ul>
+			<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
 		</li>
-	<% #end %>
-</ul> -->
+	<% end %>
+</ul>

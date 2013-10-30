@@ -5,7 +5,7 @@ class MenusController < ApplicationController
 
   def show
     @menu = Menu.find(params[:id])
-    #@items = @menu.items
+    @items = @menu.items
   end
 
   def new
@@ -28,11 +28,6 @@ class MenusController < ApplicationController
   def menu_params
     return params.require(:menu).permit(:title)
     # return :item_id?
-  end
-
-  def item_params
-    @items = Item.all
-    @items.each do |item|    
   end
   
 end
