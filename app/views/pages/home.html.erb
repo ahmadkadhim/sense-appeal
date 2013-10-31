@@ -1,27 +1,69 @@
 <header>
-<h1>Sense Appeal</h1>
-
-<%= link_to "Coffees", coffees_path %>
-<%= link_to "Menus", menus_path %>
-<%= link_to "About", about_path %>
+	<div class="row">
+		<div class="header large-centered large-10 columns">
+			<h1><span class="slabtext">Sense Appeal</span></h1>
+			<nav>
+					<%= link_to "Coffees", coffees_path %>
+					<%= link_to "Menus", menus_path %>
+					<%= link_to "About", about_path %>
+			</nav>
+		</div>
+	</div>
 </header>
 
-<section id="statement" class="who-we-are">
-	<h2 class="who-we-are">
-		WE ARE A CREATIVE COFFEE + FOOD LAB.
-		<br>WE EXPERIMENT.
-		<br>WE EVOLVE.
-		<br>WE MAKE COFFEE + FOOD TASTE BETTER.
-	</h2>
-</section>
-<section class="basicinfo">
-	<div id="offices" class="location"></div>
-	<div id="wholesale" class="basicinfo wholesale">
-		<h3 class="wholesale">Wholesale</h3>
-	</div>
-	<div id="location">
-		<h3 class="location"></h3>
-		<h4 id="hours"></h4>
-		<div id="location-map"></div>
+<section class="who-we-are statement">
+	<div class="row">
+		<div class="statement large-centered large-10 columns">
+			<h2 class="who-we-are statement">
+				<span id="statement-line-1" class="slabtext">WE ARE A CREATIVE</span>
+				<span id="statement-line-2" class="slabtext">COFFEE + FOOD LAB</span>
+				<span id="statement-line-3" class="slabtext">WE EXPERIMENT</span>
+				<span id="statement-line-4" class="slabtext">WE EVOLVE</span>
+				<span id="statement-line-5" class="slabtext">WE MAKE COFFEE + FOOD</span>
+				<span id="statement-line-6" class="slabtext">TASTE BETTER</span>
+			</h2>
+		</div>
 	</div>
 </section>
+
+<section class="basic-info">
+	<div class="row">
+		<div class="large-10 large-centered columns">
+			<div class="row">
+
+				<div id="office-wholesale-info" class="large-5 columns left-column">
+					<div class="row">
+						<div id="offices" class="basicinfo location small-6 large-12 columns">
+							<h3 class="offices">
+								Offices
+							</h3>
+						</div>
+						<div id="wholesale" class="basicinfo wholesale small-6 large-12 columns">
+							<h3 class="wholesale">
+								Wholesale
+							</h3>
+						</div>
+					</div>
+				</div>
+
+				<div id="location-hours-info" class="large-6 large-offset-1 columns right-column">
+					<h3 id="location" class="location">
+						<span class="slabtext">
+							96 Spadina Ave
+						</span>
+					</h3>
+					<h4 id="hours">
+						Monday - Friday<span class="float-right">7AM - 6PM</span>
+						<br>
+						Saturday - Sunday<span class="float-right">9AM - 5PM</span>
+					</h4>
+					<div id="location-map">
+						<!-- MAP GOES HERE -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+

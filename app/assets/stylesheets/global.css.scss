@@ -2,23 +2,24 @@
 // Global Font Styles
 
 
+// Helpers
+
+.float-right {
+	float: right;
+}
+
+span.spacer {
+	font-size: 3em;
+	line-height: 4.0;
+}
+
 // Typography
-
-@font-face {
-	font-family: Gotham-Black;
-	src: url('/fonts/Gotham-Black.otf')
-}
-
-h1 {
-	//margin-top: 0;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	text-transform:uppercase;
 }
 
-p, a {
-	margin: 5px 10px;
+h3, h4, h5, h6 {
 }
 
 a {
