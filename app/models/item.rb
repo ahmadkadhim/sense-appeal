@@ -1,8 +1,8 @@
 class Item < ActiveRecord::Base
   belongs_to :menu
 
-scope :breakfast { }
-end
+# scope :breakfast { }
+# end
 
 # module Item
 # 	module ClassMethods

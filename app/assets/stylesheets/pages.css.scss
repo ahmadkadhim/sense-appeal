@@ -7,6 +7,7 @@
 
 header {
 	background-color: #ccc;
+	background: url('brick_wall.jpg') 50% 50% no-repeat;
 	padding: 15.75em 0;
 }
 
@@ -16,8 +17,18 @@ nav {
 		font-size: 1.5em;
 		padding: .5em 1em;
 	}
+	a:hover {
+			background: #000;
+			color: #fff;
+			border-radius: .25em;
+	}
 }
 
+div.header.row {
+	background: rgba(255,255,255,.95);
+	padding: 2em .25em;
+	border-radius: .75em;
+}
 
 section.statement {
 	background-color: #fff;
