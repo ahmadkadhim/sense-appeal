@@ -9,4 +9,12 @@ class PagesController < ApplicationController
 
 	end
 
+	def offices
+
+	end
+
+	def wholesale
+
+	end
+
 end
