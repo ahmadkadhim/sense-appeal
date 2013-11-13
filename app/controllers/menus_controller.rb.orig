@@ -5,7 +5,12 @@ class MenusController < ApplicationController
 
   def show
     @menu = Menu.find(params[:id])
+<<<<<<< HEAD
+    @breakfast_items = @menu.items.breakfast
+    @bagel_items = @menu.items.bagels
+=======
     @sections = @menu.sections
+>>>>>>> section_models
   end
 
   def new

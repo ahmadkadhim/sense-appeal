@@ -3,20 +3,13 @@
 <h2><%= @menu.title %></h2>
 
 <ul>
-	<% @breakfast_items.each do |item| %>
-		<li class="item">
-			<h3><%= item.title %></h3>
-			<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
-		</li>
-	<% end %>
-</ul>
-
-<h4>Bagel</h4>
-<ul>
-	<% @bagel_items.each do |item| %>
-		<li class="item">
-			<h3><%= item.title %></h3>
-			<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
-		</li>
+	<% @sections.each do |section| %>
+		<% section.items.each do |item| %>
+			<h3><%= section.title %></h2>
+			<li class="item">
+				<h5><%= item.title %></h3>
+				<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
+			</li>
+		<% end %>
 	<% end %>
 </ul>

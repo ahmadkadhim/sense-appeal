@@ -2,12 +2,8 @@
 
 one:
   title: MyString
-  section_id: 
-  description: MyText
-  price: 9.99
+  menu_id: 
 
 two:
   title: MyString
-  section_id: 
-  description: MyText
-  price: 9.99
+  menu_id: 

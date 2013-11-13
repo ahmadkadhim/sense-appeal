@@ -1,5 +1,5 @@
 class Menu < ActiveRecord::Base
 
-	has_many :items
+	has_many :sections
 
 end

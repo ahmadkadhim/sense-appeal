@@ -31,51 +31,81 @@ menus = Menu.create([
 	}
 ])
 
+sections = Section.create([
+	{
+		title: 'Breakfast Dishes',
+		menu_id: 1
+	},
+	{
+		title: 'Breakfast Bagels',
+		menu_id: 1
+	},
+	{
+		title: 'Soup',
+		menu_id: 2
+	},
+	{
+		title: 'Warm Salads',
+		menu_id: 2
+	},
+	{
+		title: 'Sandwiches',
+		menu_id: 2
+	},
+	{
+		title: 'Sides',
+		menu_id: 2
+	},
+	{
+		title: 'Classics',
+		menu_id: 3
+	},
+	{
+		title: 'Specialty Drinks',
+		menu_id: 3
+	},
+	{
+		title: 'Teas',
+		menu_id: 3
+	}
+])
+
 items = Item.create([
 	{
 		title: 'Yoghurt and Granola',
- 		menu_id: 1,
-		section: 'breakfast'
+ 		section_id: 1
 	},
 	{
 		title: 'Avocado and Tomato',
- 		menu_id: 1,
-		section: 'bagels'
+ 		section_id: 2
 	},
 	{
 		title: 'Swiss Chard & Almond Cream Soup',
- 		menu_id: 2,
-		section: 'soup'
+ 		section_id: 3
 	},
 	{
 		title: 'Chicken and Chevre Salad',
- 		menu_id: 2,
-		section: 'salads'
+ 		section_id: 4
 	},
 	{
 		title: 'Montecristo',
- 		menu_id: 2,
-		section: 'sandwiches'
+ 		section_id: 5
 	},
 	{
 		title: "Heston's Fries",
- 		menu_id: 2,
-		section: 'sides'
+ 		section_id: 6
 	},
 	{
 		title: 'Espresso',
- 		menu_id: 3,
-		section: 'classics'
+ 		section_id: 7
 	},
 	{
 		title: 'Turkish Latte',
- 		menu_id: 3,
-		section: 'specialty'
+ 		section_id: 8
 	},
 	{
 		title: 'Rooibos',
- 		menu_id: 3,
-		section: 'teas'
+ 		section_id: 9
 	}
 ])
 

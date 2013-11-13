@@ -11,19 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131018214433) do
+ActiveRecord::Schema.define(version: 20131113222342) do
 
   create_table "items", force: true do |t|
     t.string   "title"
-    t.string   "section"
-    t.integer  "menu_id"
-    t.string   "description"
+    t.integer  "section_id"
+    t.text     "description"
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "items", ["menu_id"], name: "index_items_on_menu_id"
+  add_index "items", ["section_id"], name: "index_items_on_section_id"
 
   create_table "menus", force: true do |t|
     t.string   "title"
@@ -39,5 +38,14 @@ ActiveRecord::Schema.define(version: 20131018214433) do
     t.text     "description"
     t.string   "name"
   end
+
+  create_table "sections", force: true do |t|
+    t.string   "title"
+    t.integer  "menu_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sections", ["menu_id"], name: "index_sections_on_menu_id"
 
 end
