@@ -9,6 +9,7 @@ SenseAppeal::Application.routes.draw do
   resources :roasts, :path => :coffees, :as => :coffees
 
   resources :menus do
+    resources :sections
     resources :items
   end
 

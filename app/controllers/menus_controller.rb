@@ -5,7 +5,8 @@ class MenusController < ApplicationController
 
   def show
     @menu = Menu.find(params[:id])
-    @items = @menu.items
+    @breakfast_items = @menu.items.breakfast
+    @bagel_items = @menu.items.bagels
   end
 
   def new
@@ -27,7 +28,6 @@ class MenusController < ApplicationController
 
   def menu_params
     return params.require(:menu).permit(:title)
-    # return :item_id?
   end
   
 end

@@ -1,11 +1,19 @@
 <h1><%= link_to "Sense Appeal", root_path %>
 
-
 <h2><%= @menu.title %></h2>
 
-
 <ul>
-	<% @items.each do |item| %>
+	<% @breakfast_items.each do |item| %>
+		<li class="item">
+			<h3><%= item.title %></h3>
+			<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
+		</li>
+	<% end %>
+</ul>
+
+<h4>Bagel</h4>
+<ul>
+	<% @bagel_items.each do |item| %>
 		<li class="item">
 			<h3><%= item.title %></h3>
 			<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
