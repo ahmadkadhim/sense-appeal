@@ -1,18 +1,21 @@
-// Home Page Content
 
-// HEADER SECTION
+// // // Home Page Content
+
+// // HEADER SECTION
 
 	header {
-		background-color: #ccc;
-		background: url('brick_wall.jpg') 50% 50% no-repeat;
+		background-color: #fff;
+		// background: url('brown-brick-RIGHTS.jpg') 50% 50% no-repeat;
 		padding: 15.75rem 0;
 	}
 
 	nav {
-		text-align: center;
 		a {
-			font-size: 1.5rem;
+			font-size: 1.5em;
 			padding: .5rem 1rem;
+		}
+		a:first-child {
+			margin-left: -1rem;
 		}
 		a:hover {
 				background: #000;
@@ -21,21 +24,21 @@
 		}
 	}
 
-	div.header.row {
-		background: rgba(255,255,255,.05);
-		padding: 2rem .25rem;
-		border-radius: .75rem;
-	}
+// 	div.header.row {
+// 		padding: 2rem .25rem;
+// 		border-radius: .75rem;
+// 	}
 
 
-// STATEMENT SECTION
+// // STATEMENT SECTION
 
 	section.statement {
-		background-color: #fff;
-		padding: 2.75rem 0 1.25rem 0;
+		background-color: #000;
+		padding: 2.50rem 0 1.25rem 0;
 	}
 
 	h2.statement {
+		color: #fff;
 	}
 
 	#statement-line-2, #statement-line-4 {
@@ -43,36 +46,52 @@
 	}
 
 
-// BASIC INFO SECTION
+// // BASIC INFO SECTION
 
 	section.basic-info {
-		background-color: #000;
-		padding: 7rem 0rem;
+		background: #000 url('coffee-extraction-RIGHTS.jpg') 50% 50% no-repeat;
+	}
+
+	#basic-info-wrap {
+		max-height: 35rem;
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+	}
+
+	#basic-info-wrap > .row {
+		margin: 0;
 	}
 
 	a#offices, a#wholesale {
 		padding: 1rem;
-		background-color: #dca;
+		background-color: #fff;
 		border-radius: .2rem;
 		display: block;
-	}
-
-	a#offices {
 		margin-bottom: 1rem;
 	}
 
-	a#location-hours-info {
-		overflow: hidden;
+	#location-hours-info {
+		white-space: line;
+		background: #000;
+		border-radius: .2rem;
+		padding: 1rem;
 
-		h3#location, h4#hours {
-			color: #fff;
-			margin: 0;
-		}
+			#spadina {
+				margin-bottom: 1.5rem;
+			}
 
-		h4#hours {
-			font-size:1.1em;	
-		}
+			.locations, .hours, .numbers {
+				color: #fff;
+			}
 	}
 
 
+
+// // // MEDIA QUERIES
+
+@media #{$small-only} {
+	h1 {
+		font-size: 1.5em;
+	}
+}
 

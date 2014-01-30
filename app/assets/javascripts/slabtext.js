@@ -247,7 +247,5 @@
 
 // Custom code starts here
 
-$("h1").slabText();
-$("h2").slabText();
-$("#location").slabText();
-
+$("h2.statement").slabText();
+$(".locations").slabText();

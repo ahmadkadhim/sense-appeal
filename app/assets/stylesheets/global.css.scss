@@ -1,6 +1,10 @@
 
 // Global Font Styles
 
+body {
+	// background: #000;
+	font-size: 100%;
+}
 
 // Helpers
 
@@ -13,6 +17,10 @@ span.spacer {
 	line-height: 4.0;
 }
 
+.clear {
+	clear: both;
+}
+
 // Typography
 
 h1, h2, h3, h4, h5, h6, a {
@@ -23,6 +31,7 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 4em;
-	line-height: .75em;
+	font-size: 4.5em;
+	line-height: .9em;
+	margin: 30px auto;
 }
