@@ -13,15 +13,13 @@
 	}
 
 	nav {
+		margin-left: -.9rem; // adjust margin-left to be .1 less than padding
+							 // to align it better with the logo
 		a {
 			display: inline-block;
 			font-size: 1.5em;
 			padding: .5rem 1rem;
 			transition: all .1s ease-in-out;
-		}
-		a:first-child {
-			margin-left: -.9rem; // adjust margin-left to be .1 less than padding
-								 // to align it better with the logo
 		}
 		a:hover {
 				background: #000;
@@ -131,13 +129,13 @@ section.coffees {
 		font-size: 3em;
 	}
 	nav {
+		margin-left: -.70rem;
+
 		a {
 			font-size: 1.2em;
 			padding: .40rem .80rem;
 		}
-		a:first-child {
-			margin-left: -.70rem;
-		}
+
 	}
 
 }
@@ -147,12 +145,11 @@ section.coffees {
 		font-size: 2.2em;
 	}
 	nav {
+		margin-left: -.40rem;
+		
 		a {
 			font-size: 1em;
 			padding: .25rem .50rem;
-		}
-		a:first-child {
-			margin-left: -.40rem;
 		}
 	}
 }
