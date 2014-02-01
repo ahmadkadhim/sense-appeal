@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
 
 	def home
-
+		@roasts = Roast.all
 	end
 
 	def about

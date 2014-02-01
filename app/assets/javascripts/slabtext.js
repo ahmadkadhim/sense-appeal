@@ -250,6 +250,4 @@
 
 $("h2.statement").slabText();
 
-// $(".locations").slabText();
-
 
