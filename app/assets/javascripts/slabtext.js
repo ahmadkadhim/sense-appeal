@@ -240,6 +240,7 @@
                     resizeThrottle = setTimeout(resizeSlabs, resizeThrottleTime);
                 });
             };
+
         });
     };
 })(jQuery);
@@ -248,4 +249,7 @@
 // Custom code starts here
 
 $("h2.statement").slabText();
-$(".locations").slabText();
+
+// $(".locations").slabText();
+
+

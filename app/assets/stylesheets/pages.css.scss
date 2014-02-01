@@ -6,28 +6,29 @@
 	header {
 		background-color: #fff;
 		// background: url('brown-brick-RIGHTS.jpg') 50% 50% no-repeat;
-		padding: 15.75rem 0;
+	}
+
+	div.header.row {
+		padding: 15rem 0;
 	}
 
 	nav {
 		a {
+			display: inline-block;
 			font-size: 1.5em;
 			padding: .5rem 1rem;
+			transition: all .1s ease-in-out;
 		}
 		a:first-child {
-			margin-left: -1rem;
+			margin-left: -.9rem; // adjust margin-left to be .1 less than padding
+								 // to align it better with the logo
 		}
 		a:hover {
 				background: #000;
 				color: #fff;
-				border-radius: .25rem; 
+				border-radius: .25rem;
 		}
 	}
-
-// 	div.header.row {
-// 		padding: 2rem .25rem;
-// 		border-radius: .75rem;
-// 	}
 
 
 // // STATEMENT SECTION
@@ -49,49 +50,116 @@
 // // BASIC INFO SECTION
 
 	section.basic-info {
-		background: #000 url('coffee-extraction-RIGHTS.jpg') 50% 50% no-repeat;
+		background: #f99 url('coffee-extraction-RIGHTS.jpg') no-repeat 50% 50%;
+		background-size: cover;
 	}
 
 	#basic-info-wrap {
-		max-height: 35rem;
-		padding-top: 9rem;
-		padding-bottom: 9rem;
+		padding: 4rem 0;
 	}
 
 	#basic-info-wrap > .row {
 		margin: 0;
 	}
 
-	a#offices, a#wholesale {
+	#offices, #wholesale {
+
+		// TODO: cut the textbox styles into a mixin
+
 		padding: 1rem;
-		background-color: #fff;
+		background: #fff;
 		border-radius: .2rem;
 		display: block;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
+		box-shadow: 0 .3rem 0 0 #000;
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 0;
+			margin-bottom: .2em;
+		}
+
+		p {
+			margin: 0;
+		}
 	}
 
 	#location-hours-info {
-		white-space: line;
-		background: #000;
+		background: #fff;
 		border-radius: .2rem;
 		padding: 1rem;
+		box-shadow: 0 .3rem 0 0 #000;
 
-			#spadina {
-				margin-bottom: 1.5rem;
-			}
+		span {
+			white-space: normal;
+		}
 
-			.locations, .hours, .numbers {
-				color: #fff;
-			}
+		#spadina {
+			margin-bottom: 1.5rem;
+		}
+
 	}
+
+// // COFFEES SECTION
+
+section.coffees {
+	background-color: #fff;
+	min-height: 30rem;
+}
 
 
 
 // // // MEDIA QUERIES
 
-@media #{$small-only} {
-	h1 {
-		font-size: 1.5em;
+@media all and (min-width: 600px) {
+	section.basic-info {
+		// background-size: 100% auto;
 	}
 }
 
+@media all and (max-width: 64rem) {
+	#location-hours-info {
+			h4.locations {
+				font-size: 1.3rem;
+			}
+	}
+
+}
+
+
+@media all and (max-width: 42rem) {
+	h1 {
+		font-size: 3em;
+	}
+	nav {
+		a {
+			font-size: 1.2em;
+			padding: .40rem .80rem;
+		}
+		a:first-child {
+			margin-left: -.70rem;
+		}
+	}
+
+}
+
+@media all and (max-width: 30rem) {
+	h1 {
+		font-size: 2.2em;
+	}
+	nav {
+		a {
+			font-size: 1em;
+			padding: .25rem .50rem;
+		}
+		a:first-child {
+			margin-left: -.40rem;
+		}
+	}
+}
+
+@media all and (max-width: 24rem) {
+	h1 {
+		font-size: 1.8em;
+	}
+
+}

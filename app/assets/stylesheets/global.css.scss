@@ -2,7 +2,7 @@
 // Global Font Styles
 
 body {
-	// background: #000;
+	// background: #c90;
 	font-size: 100%;
 }
 
@@ -23,7 +23,7 @@ span.spacer {
 
 // Typography
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
 	text-transform:uppercase;
 }
 
@@ -33,5 +33,5 @@ h3, h4, h5, h6 {
 h1 {
 	font-size: 4.5em;
 	line-height: .9em;
-	margin: 30px auto;
+	margin: 0 0 1.25rem 0;
 }
