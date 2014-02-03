@@ -182,6 +182,27 @@ footer {
 	}
 }
 
+
+// // // Other Pages
+
+
+// // Menus, Coffees
+
+div.menus, div.coffees-page {
+	padding: 3rem 0;
+}
+
+li.menus, li.coffees-page {
+	padding: 1rem;
+	background: #fff;
+	display: block;
+	float: left;
+	width: 16rem;
+	border: 1rem solid #000;
+	margin: 0 .5rem .5rem 0;
+}
+
+
 // // // MEDIA QUERIES
 
 @media all and (min-width: 600px) {
