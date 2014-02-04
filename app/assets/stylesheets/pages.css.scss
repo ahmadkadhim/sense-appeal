@@ -142,7 +142,7 @@
 	}
 
 	section.philosophy {
-		background: #000 url('brick_wall.jpg') 50% 50% no-repeat;
+		background: #000 url('wood.jpg') 50% 50% no-repeat;
 		background-size: cover;
 		padding: 3rem 0;
 
@@ -161,11 +161,12 @@
 		}
 
 		p {
-			font-size: 1.2em;
+			font-family: "Gotham-Light";
+			font-size: 1.3em;
 		}
 
 		h3, p {
-			line-height: 30px;
+			line-height: 35px;
 		}
 
 		h1, h2, h3, h4, h5, h6, p, a {
