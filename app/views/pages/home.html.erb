@@ -35,30 +35,11 @@
 		<div id="basic-info-wrap" class="small-11 large-10 small-centered columns">
 			<div class="row">
 
-				<div id="office-wholesale-info" class="large-5 columns">
-					<div class="row">
-						<div href="/offices" id="offices" class="large-12 columns">
-							<h3 class="offices"><a href="/offices">Offices</a></h3>
-							<p>
-								We can supply your office with our local craft roasts, show you how to pull a perfect shot, and everything in between.
-							</p>
-						</div>
-						<div href="/wholesale" id="wholesale" class="large-12 columns">
-							<h3 class="wholesale"><a href="/wholesale">Wholesale</a></h3>
-							<p>
-								We offer coffee programs, catering, technical services, and training to businesses, restaurants, and hotels.
-							</p>
-						</div>
-					</div>
-				</div>
+				<div id="location-hours-info-small" class="large-5 show-for-small columns">
 
-				<div id="location-hours-info" class="large-5 columns">
-
-					<div id="spadina">
+					<a id="spadina-small" class="location-blocks" href="#">
 						<h4 class="locations">
-							<span class="slabtext">
 							96 Spadina Ave
-							</span>
 						</h4>
 						<h5 class="numbers">(416) 203 - 0023</h4>
 						<h6 class="hours">
@@ -68,14 +49,10 @@
 						<h6 class="hours">
 							SAT - SUN<span class="float-right">9AM - 5PM</span>
 						</h6>
-						<div id="location-map">
-							<!-- TODO: MAP GOES HERE -->
-						</div>
-					</div>
+					</a>
 
-					<div id="lakeshore">
+					<a id="lakeshore-small" class="location-blocks" href="#">
 						<h4 class="locations">
-							<span class="slabtext">
 							2143 Lakeshore Blvd
 						</h4>
 						<h5 class="numbers">(416) 203 - 0023</h4>
@@ -86,9 +63,58 @@
 						<h6 class="hours">
 							SAT - SUN<span class="float-right">9AM - 5PM</span>
 						</h6>
-					</div>
+					</a>
 
-				</div> <!-- end location-hours-info -->
+				</div> <!-- end location-hours-info-small -->
+
+				<div id="office-wholesale-info" class="large-5 columns">
+					<div class="row">
+						<a href="/offices" id="offices" class="large-12 columns">
+							<h3 class="offices">Offices</h3>
+							<p>
+								We can supply your office with our local craft roasts, show you how to pull a perfect shot, and everything in between.
+							</p>
+						</a>
+						<a href="/wholesale" id="wholesale" class="large-12 columns">
+							<h3 class="wholesale">Wholesale</h3>
+							<p>
+								We offer coffee programs, catering, technical services, and training to businesses, restaurants, and hotels.
+							</p>
+						</a>
+					</div>
+				</div> <!-- end office-wholesale-info -->
+
+				<div id="location-hours-info-large" class="large-6 hide-for-small columns">
+
+					<a id="spadina-large" class="location-blocks" href="#">
+						<h4 class="locations">
+							96 Spadina Ave
+						</h4>
+						<h5 class="numbers">(416) 203 - 0023</h4>
+						<h6 class="hours">
+							MON - FRI<span class="float-right">7:30AM - 6PM</span>
+						</h6>
+						<div class="clear"></div>
+						<h6 class="hours">
+							SAT - SUN<span class="float-right">9AM - 5PM</span>
+						</h6>
+					</a>
+
+					<a id="lakeshore-large" class="location-blocks" href="#">
+						<h4 class="locations">
+							2143 Lakeshore Blvd
+						</h4>
+						<h5 class="numbers">(416) 203 - 0023</h4>
+						<h6 class="hours">
+							MON - FRI<span class="float-right">7AM - 6PM</span>
+						</h6>
+						<div class="clear"></div>
+						<h6 class="hours">
+							SAT - SUN<span class="float-right">9AM - 5PM</span>
+						</h6>
+					</a>
+
+				</div> <!-- end location-hours-info-large -->
 			</div> <!-- end row -->
 		</div> <!-- end basic-info-wrap -->
 	</div> <!-- end row -->
@@ -102,11 +128,13 @@
 
  			<% @roasts.each do |roast| %>
 				<li>
-					<h2 class="coffee-names"><%= link_to roast.name, coffee_path(roast) %></h2>
-					<h6>Origin</h6>
-					<p><%= roast.origin %></p>
-					<h6>Description</h6>
-					<p><%= roast.description %></p>
+					<%= link_to coffee_path(roast) do %>
+						<h2 class="coffee-names"><%= roast.name %></h2>
+						<h6>Origin</h6>
+						<p><%= roast.origin %></p>
+						<h6>Description</h6>
+						<p><%= roast.description %></p>
+					<% end %>
 				</li>
 			<% end %>
  				
