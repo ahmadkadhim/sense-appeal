@@ -13,10 +13,10 @@ function getOriginalHeight(el) {
     return (el.data("originalHeight") == undefined) ? (el.height()) : (el.data("originalHeight"));
 }
 
-function columnConform() {
+function columnConform(blocks) {
 
     // find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
-    $('#coffee-blocks > li').each(function() {
+    $(blocks).each(function() {
 
         // "caching"
         var $el = $(this);
@@ -50,9 +50,9 @@ function columnConform() {
 
 
 $(window).resize(function() {
-    columnConform();
+    columnConform('#coffee-blocks > li');
 });
 
 $(window).load(function() {
-    columnConform();
+    columnConform('#coffee-blocks > li');
 });

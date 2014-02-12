@@ -1,4 +1,4 @@
-<header>
+<header class="home">
 	<div class="row header">
 		<div class="header small-11 large-10 small-centered columns">
 			<h1>
@@ -7,8 +7,8 @@
 				<span>Roasters</span>
 			</h1>
 			<nav>
-					<h4 class="header-links-small"><%= link_to "Coffees", coffees_path %></h4>
-					<h4 class="header-links-small"><%= link_to "Menus", menus_path %></h4>
+					<h4 class="header-links-small"><%= link_to "Coffees", anchor: "coffees" %></h4>
+					<h4 class="header-links-small"><%= link_to "Menus", anchor: "menus" %></h4>
 					<h4 class="header-links-small"><%= link_to "Locations", anchor: "basic-info" %></h4>
 			</nav>
 		</div>
@@ -122,16 +122,16 @@
 	</div> <!-- end row -->
 </section>
 
-<section class="coffees">
+<section class="coffees" id="coffees">
  	<div class="row coffees">
  		<div id="coffee-blocks" class="coffees small-11 large-10 small-centered columns">
  			
  			<h2 class="coffees">Coffees</h2>
 
  			<% @roasts.each do |roast| %>
-				<li>
+				<li class="blocks">
 					<%= link_to coffee_path(roast) do %>
-						<h2 class="coffee-names"><%= roast.name %></h2>
+						<h3 class="coffee-names"><%= roast.name %></h2>
 						<h6>Origin</h6>
 						<p><%= roast.origin %></p>
 						<h6>Description</h6>
@@ -188,6 +188,24 @@
  				<p>Lorem ipsum</p>
  			</div> -->
  	</div>
+</section>
+
+<section class="menus" id="menus">
+ 	<div class="row menus">
+ 		<div id="menu-blocks" class="coffees small-11 large-10 small-centered columns">
+ 			
+ 			<h2 class="menus">Menus</h2>
+
+ 			<% @menus.each do |menu| %>
+				<li class="blocks">
+					<%= link_to menu_path(menu) do %>
+						<h3 class="menu-titles"><%= menu.title %></h2>
+						<h6>Section</h6>
+						<p>Bla bla bla</p>
+					<% end %>
+				</li>
+			<% end %>
+	</div>
 </section>
 
 <section class="philosophy">

@@ -27,9 +27,6 @@
 		text-transform:uppercase;
 	}
 
-	h3, h4, h5, h6 {
-	}
-
 	h1 {
 		font-size: 4.5em;
 		line-height: .9em;
@@ -39,10 +36,24 @@
 // Link Blocks
 
 	.blocks {
+		background: #fff;
 		display: block;	
 		width: 100%;
 		float: left;
 		transition: all .1s ease-in;
+	}
+
+	li.blocks {
+		list-style: none;
+		width: 16rem;
+		border: 1rem solid #000;
+		margin: 0 .5rem .5rem 0;
+	}
+
+	.blocks a {
+		height: 100%;
+		display: block;
+		padding: 1rem;
 	}
 
 	.blocks:hover {
@@ -68,11 +79,7 @@
 		padding: 1rem;
 	}
 
-	.header-links-small:hover {
+	.header-links-small:hover a {
 		background: #000;
 		color: #fff;
-	}
-
-	.header-links-small:hover a {
-		color: inherit;
 	}

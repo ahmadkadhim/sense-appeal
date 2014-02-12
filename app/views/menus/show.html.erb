@@ -1,15 +1,18 @@
-<h1><%= link_to "Sense Appeal", root_path %>
+<div class="row">
+	<div class="coffees-page small-11 large-10 small-centered columns">
 
-<h2><%= @menu.title %></h2>
+		<h2><%= @menu.title %></h2>
 
-<ul>
-	<% @sections.each do |section| %>
-		<% section.items.each do |item| %>
-			<h3><%= section.title %></h2>
-			<li class="item">
-				<h5><%= item.title %></h3>
-				<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
-			</li>
-		<% end %>
-	<% end %>
-</ul>
+		<ul>
+			<% @sections.each do |section| %>
+				<% section.items.each do |item| %>
+					<h3><%= section.title %></h2>
+					<li class="item">
+						<h5><%= item.title %></h3>
+						<%= link_to "Edit", edit_menu_item_path(item, @menu) %>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+</div>
