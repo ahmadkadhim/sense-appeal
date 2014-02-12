@@ -7,9 +7,9 @@
 				<span>Roasters</span>
 			</h1>
 			<nav>
-					<%= link_to "Coffees", coffees_path %>
-					<%= link_to "Menus", menus_path %>
-					<%= link_to "Locations", anchor: "location-hours-info" %>
+					<h4 class="header-links-small"><%= link_to "Coffees", coffees_path %></h4>
+					<h4 class="header-links-small"><%= link_to "Menus", menus_path %></h4>
+					<h4 class="header-links-small"><%= link_to "Locations", anchor: "basic-info" %></h4>
 			</nav>
 		</div>
 	</div>
@@ -30,14 +30,14 @@
 	</div>
 </section>
 
-<section class="basic-info">
+<section class="basic-info" id="basic-info">
 	<div class="row">
 		<div id="basic-info-wrap" class="small-11 large-10 small-centered columns">
 			<div class="row">
 
 				<div id="location-hours-info-small" class="large-5 show-for-small columns">
 
-					<a id="spadina-small" class="location-blocks" href="#">
+					<a id="spadina" class="blocks" href="#">
 						<h4 class="locations">
 							96 Spadina Ave
 						</h4>
@@ -49,9 +49,10 @@
 						<h6 class="hours">
 							SAT - SUN<span class="float-right">9AM - 5PM</span>
 						</h6>
+						<div class="clear"></div>
 					</a>
 
-					<a id="lakeshore-small" class="location-blocks" href="#">
+					<a id="lakeshore" class="blocks" href="#">
 						<h4 class="locations">
 							2143 Lakeshore Blvd
 						</h4>
@@ -86,7 +87,7 @@
 
 				<div id="location-hours-info-large" class="large-6 hide-for-small columns">
 
-					<a id="spadina-large" class="location-blocks" href="#">
+					<a id="spadina" class="blocks" href="#">
 						<h4 class="locations">
 							96 Spadina Ave
 						</h4>
@@ -98,9 +99,10 @@
 						<h6 class="hours">
 							SAT - SUN<span class="float-right">9AM - 5PM</span>
 						</h6>
+						<div class="clear"></div>
 					</a>
 
-					<a id="lakeshore-large" class="location-blocks" href="#">
+					<a id="lakeshore" class="blocks" href="#">
 						<h4 class="locations">
 							2143 Lakeshore Blvd
 						</h4>
@@ -218,19 +220,20 @@
 		<div class="small-11 large-10 small-centered columns">
 			<div class="row">
 
-				<div class="contacts large-5 columns">
+				<div class="links small-12 columns">
+					<h5 class="header-links-small"><a href="#">Blog</a></h5>
+					<h5 class="header-links-small"><a href="#">Locations</a>
+					<h5 class="header-links-small"><a href="/menus">Menus</a></h5>
+					<h5 class="header-links-small"><a href="/coffees">Coffee</a></h5>
+					<h5 class="header-links-small"><a href="/about">About SA</a></h5>
+				</div>
+
+				<div class="contacts small-12 columns">
 					<h4>(416) - 907 - 8524</h4>
 					<h4>cafe@senseappeal.ca</h4>
 					<h4>rrota@senseappeal.ca</h4>
 				</div>
-				
-				<div class="links large-5 large-offset-2 columns">
-					<h5><a href="#">Blog</a></h5>
-					<h5><a href="#">Locations</a>
-					<h5><a href="/menus">Menus</a></h5>
-					<h5><a href="/coffees">Coffee</a></h5>
-					<h5><a href="/about">About SA</a></h5>
-				</div>
+			
 			</div>
 		</div>
 	</div>

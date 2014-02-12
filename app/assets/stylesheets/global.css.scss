@@ -1,37 +1,78 @@
 
 // Global Font Styles
 
-body {
-	// background: #c90;
-	font-size: 100%;
-}
+	body {
+		// background: #c90;
+		font-size: 100%;
+	}
 
 // Helpers
 
-.float-right {
-	float: right;
-}
+	.float-right {
+		float: right;
+	}
 
-span.spacer {
-	font-size: 3em;
-	line-height: 4.0;
-}
+	span.spacer {
+		font-size: 3em;
+		line-height: 4.0;
+	}
 
-.clear {
-	clear: both;
-}
+	.clear {
+		clear: both;
+	}
 
 // Typography
 
-h1, h2, h3, h4, h5, h6 {
-	text-transform:uppercase;
-}
+	h1, h2, h3, h4, h5, h6 {
+		text-transform:uppercase;
+	}
 
-h3, h4, h5, h6 {
-}
+	h3, h4, h5, h6 {
+	}
 
-h1 {
-	font-size: 4.5em;
-	line-height: .9em;
-	margin: 0 0 1.25rem 0;
-}
+	h1 {
+		font-size: 4.5em;
+		line-height: .9em;
+		margin: 0 0 1.25rem 0;
+	}
+
+// Link Blocks
+
+	.blocks {
+		display: block;	
+		width: 100%;
+		float: left;
+		transition: all .1s ease-in;
+	}
+
+	.blocks:hover {
+		background: #000;
+		
+		h1, h2, h3, h4, h5, h6, p, a {
+			color: #fff;
+		}
+	}
+
+// Header Links
+
+	.header-links-small {
+		text-transform: capitalize;
+		display: inline-block;
+		font-family: "Gotham-Medium";
+		font-weight: normal;
+		// transition: all .05s ease-in-out;
+	}
+
+	.header-links-small a {
+		display: block;
+		padding: 1rem;
+	}
+
+	.header-links-small:hover {
+		background: #000;
+		color: #fff;
+	}
+
+	.header-links-small:hover a {
+		color: inherit;
+	}
