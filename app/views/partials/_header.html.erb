@@ -1,1 +1,18 @@
-<h1><%= link_to "Sense Appeal", root_path %></h1>
+<header class="content-pages">
+	<div class="row">
+		<div class="header small-11 large-10 small-centered columns">
+			<%= link_to root_path do %>
+				<h1>
+					<span>Sense Appeal</span><br/>
+					<span>Coffee</span><br/>
+					<span>Roasters</span>
+				</h1>
+			<% end %>
+			<nav>
+					<h4 class="header-links-small"><%= link_to "Coffees", root_path + "#coffees" %></h4>
+					<h4 class="header-links-small"><%= link_to "Menus", anchor: "menus" %></h4>
+					<h4 class="header-links-small"><%= link_to "Locations", anchor: "basic-info" %></h4>
+			</nav>
+		</div>
+	</div>
+</header>

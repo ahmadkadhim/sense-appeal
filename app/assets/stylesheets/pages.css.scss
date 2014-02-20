@@ -4,9 +4,12 @@
 
 // // HEADER
 
-	header {
+	header.content-pages {
 		background-color: #fff;
-		padding: 3rem 0;
+		padding: 3rem;
+		h1 {
+			font-size: 3em;
+		}
 	}
 
 	header.home {
