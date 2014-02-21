@@ -8,7 +8,7 @@
 			</h1>
 			<nav>
 					<h4 class="header-links-small"><%= link_to "Coffees", anchor: "coffees" %></h4>
-					<h4 class="header-links-small"><%= link_to "Food", anchor: "menus" %></h4>
+					<h4 class="header-links-small"><%= link_to "Food", anchor: "food" %></h4>
 					<h4 class="header-links-small"><%= link_to "Locations", anchor: "basic-info" %></h4>
 			</nav>
 		</div>
@@ -190,11 +190,11 @@
  	</div>
 </section>
 
-<section class="menus" id="menus">
+<section class="menus" id="food">
  	<div class="row menus">
  		<div id="menu-blocks" class="coffees small-11 large-10 small-centered columns">
  			
- 			<h2 class="menus">Menus</h2>
+ 			<h2 class="menus">Food</h2>
 
  			<% @menus.each do |menu| %>
 				<li class="blocks">

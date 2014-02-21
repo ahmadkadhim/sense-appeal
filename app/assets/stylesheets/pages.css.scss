@@ -6,10 +6,8 @@
 
 	header.content-pages {
 		background-color: #fff;
-		padding: 3rem;
-		h1 {
-			font-size: 3em;
-		}
+		padding: 3rem 0;
+		font-size: .75em;
 	}
 
 	header.home {
@@ -214,7 +212,7 @@
 // // Menus, Coffees
 
 	div.menus, div.coffees-page {
-		padding: 3rem 0;
+		// padding: 3rem 0;
 	}
 
 	li.menus, li.coffees-page {
