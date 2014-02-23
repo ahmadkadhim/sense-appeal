@@ -43,6 +43,20 @@
 		transition: all .1s ease-in;
 	}
 
+	.no-link-block {
+		display: block;	
+		// background: #000;
+		width: 100%;
+		float: left;
+		padding: 1rem;
+		border: 1rem solid #000;
+		
+		h1, h2, h3, h4, h5, h6, p, a {
+			color: #fff;
+		}
+
+	}
+
 	li.blocks {
 		list-style: none;
 		width: 16rem;
