@@ -202,7 +202,38 @@
 		}
 
 		.social {
-			padding-top: 4.2rem;
+			
+		}
+
+		#twitter, #facebook, #instagram {
+			// transition: all .1s ease-in;
+			display: inline-block;
+			height: 90px;
+			width: 90px;
+		}
+
+		#twitter {
+			background: url('twitter.png') no-repeat 50% 50%;
+		}
+
+		#twitter:hover {
+			background: #000 url('twitter-black.png') no-repeat 50% 50%;
+		}
+
+		#facebook {
+			background: url('facebook.png') no-repeat 50% 50%;
+		}
+
+		#facebook:hover {
+			background: #000 url('facebook-black.png') no-repeat 50% 50%;
+		}
+
+		#instagram {
+			background: url('instagram.png') no-repeat 50% 50%;
+		}
+
+		#instagram:hover {
+			background: #000 url('instagram-black.png') no-repeat 50% 50%;
 		}
 	}
 
